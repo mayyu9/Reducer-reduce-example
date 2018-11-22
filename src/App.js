@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+
+import Main from './with-out-redcuers-reduce/components/Main';
+import Main2 from './with-redcuers-reduce/components/Main';
 
 class App extends Component {
   render() {
     return (
+      <div>
+
+      <hr />
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <p>react-redux with reducers-reduce</p>
+        <Main2 />
+      </div>
       </div>
     );
   }
 }
 
 export default App;
+
+
+// <div className="App">
+// <p>react-redux with combine reducers</p>
+//   <Main />
+// </div>
